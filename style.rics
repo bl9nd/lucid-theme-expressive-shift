@@ -1036,7 +1036,7 @@ ytmusic-player-page[player-fullscreened] #main-panel {
 
 /* Global Media Sizing */
 ytmusic-player-page #player.ytmusic-player-page { 
-  border-radius: 52px !important; 
+  border-radius: 2px !important; 
   overflow: hidden !important; 
   box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important; 
   background: transparent !important; 
