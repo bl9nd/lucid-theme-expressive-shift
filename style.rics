@@ -42,10 +42,10 @@ blyrics-queue-scroll-ms = 150;
   --blyrics-lyric-inactive-color: color(display-p3 1 1 1 / 0.2);
   --font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif;
   --blyrics-font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif;
-  --font-weight-default: 500;
-  --font-settings-default: "slnt" 0, "wdth" 87.5, "GRAD" 0, "ROND" 100;
-  --font-weight-heading: 600;
-  --font-settings-heading: "slnt" 0, "wdth" 112.5, "GRAD" 50, "ROND" 0;
+  --font-weight-default: 700;
+  --font-settings-default: "slnt" 0, "wdth" 110, "GRAD" 0, "ROND" 100;
+  --font-weight-heading: 800;
+  --font-settings-heading: "slnt" 0, "wdth" 125, "GRAD" 50, "ROND" 0;
   --bg-primary: #000000;
   --border-color: rgba(255, 255, 255, 0.2);
   --border-radius-small: 6px;
@@ -754,6 +754,21 @@ ytmusic-player-page[player-ui-state="FULLSCREEN"]>div>div#side-panel {
 @keyframes blyrics-glow { 
   0% { filter: drop-shadow(0 0 1rem var(--blyrics-glow-color)); } 
   100% { filter: drop-shadow(0 0 0rem var(--blyrics-glow-color)); } 
+}
+
+/* Active Lyrics */
+.blyrics-container .blyrics--line.blyrics--active .blyrics--word,
+.blyrics-container .blyrics--line.blyrics--animating .blyrics--word {
+  font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: "slnt" -10, "wdth" 125, "GRAD" 50, "ROND" 0 !important;
+  font-style: italic !important;
+}
+
+/* Inactive Lyrics */
+.blyrics-container .blyrics--line:not(.blyrics--active):not(.blyrics--animating) .blyrics--word {
+  font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
+  font-weight: var(--font-weight-default) !important;
 }
 
 /* Synced Line Adjustments */
