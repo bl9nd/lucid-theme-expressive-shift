@@ -55,7 +55,6 @@ blyrics-queue-scroll-ms = 150;
   --blyrics-scale-transition-duration: 0.6s;
   --blyrics-scroll-timing-offset: 0.6s;
   --blyrics-background-rotate-speed: 30s;
-  
   --blyrics-panel-size: 50%;
   --blyrics-video-panel-size: 37%;
   --blyrics-fullscreen-panel-size: 55%;
@@ -74,7 +73,7 @@ blyrics-queue-scroll-ms = 150;
 }
 
 * {
-  font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
+  font-family: "Google Sans Flex", var(--noto-sans-universal), sans !important;
 }
 
 /* =========================================
@@ -350,7 +349,8 @@ ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Upgrade"]),
 ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Premium"]),
 ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Premium"]),
 ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Try Premium"]),
-ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Try Premium"]) {
+ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Try Premium"]),
+ytmusic-guide-entry-renderer:has(yt-formatted-string:not([is-empty]):not([hidden])) {
   display: none !important;
 }
 
@@ -1071,7 +1071,7 @@ ytmusic-player-page:not([video-mode]):not([is-video-truncation-fix-enabled])[pla
   aspect-ratio: 1 !important;
   height: auto !important; 
   max-height: none !important; 
-  border-radius: 3px !important; 
+  border-radius: 8px !important; 
   box-shadow: 0 20px 50px rgba(0,0,0,0.4) !important; 
 }
 
