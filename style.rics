@@ -1,10 +1,5 @@
 /* Lucid Expressive Shift v1.1.1, a custom theme for BetterLyrics */
-/* =========================================
-   --- EXPRESSIVE TYPOGRAPHY (GOOGLE SANS FLEX) ---
-   Imported/adapted from the Google Sans Flex userstyle.
-   Font-weight/variation only — no backgrounds or layout,
-   so it layers cleanly on top of Lucid's glass styling.
-   ========================================= */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap");
 
