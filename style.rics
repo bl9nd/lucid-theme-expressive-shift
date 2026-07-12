@@ -109,7 +109,7 @@ ytmusic-player-page:not([video-mode]):not([player-fullscreened]):not(
     #player.ytmusic-player-page,
 ytmusic-player[player-ui-state="FULLSCREEN"],
 ytmusic-player {
-    max-width: 60% !important;
+    max-width: 100% !important;
     border-radius: var(--border-radius-large) !important;
 }
 
