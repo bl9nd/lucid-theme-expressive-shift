@@ -193,7 +193,7 @@ ytmusic-search-box[has-query] .search-container {
 /* Search Input Pill (Closed & Hover States) */
 ytmusic-search-box .search-box {
   width: 420px !important;
-  height: 280px !important;
+  height: 36px !important;
   border-radius: 52px !important;
   background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(1.5px) url(#lg-filter) blur(3px) saturate(1.5) brightness(1.1) !important;
@@ -378,7 +378,7 @@ ytmusic-chip-cloud-renderer ytmusic-chip-cloud-chip-renderer {
 
 ytmusic-chip-cloud-renderer ytmusic-chip-cloud-chip-renderer a.yt-simple-endpoint {
   width: 420px !important;
-  height: 280px !important;
+  height: 36px !important;
   background: rgba(255, 255, 255, 0.03) !important; 
   backdrop-filter: blur(1.5px) url(#lg-filter) blur(3px) saturate(1.5) brightness(1.1) !important;
   -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.15) contrast(1.05) !important;
@@ -544,7 +544,7 @@ ytmusic-card-shelf-renderer:not(:has([thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCL
 /* Carousel Buttons (Play All, Arrows) */
 ytmusic-carousel-shelf-basic-header-renderer .yt-spec-button-shape-next--outline {
   width: 420px !important;
-  height: 280px !important;
+  height: 36px !important;
   background: rgba(255, 255, 255, 0.03) !important; 
   backdrop-filter: blur(1.5px) url(#lg-filter) blur(3px) saturate(1.5) brightness(1.1) !important;
   -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.15) contrast(1.05) !important;
@@ -566,7 +566,7 @@ ytmusic-carousel-shelf-basic-header-renderer .yt-spec-button-shape-next--outline
 
 ytmusic-carousel-shelf-renderer yt-icon-button {
   width: 420px !important;
-  height: 280px !important;
+  height: 36px !important;
   background: rgba(255, 255, 255, 0.03) !important; 
   backdrop-filter: blur(1.5px) url(#lg-filter) blur(3px) saturate(1.5) brightness(1.1) !important;
   -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.15) contrast(1.05) !important;
@@ -673,7 +673,7 @@ ytmusic-subscribe-button-renderer .yt-spec-button-shape-next--outline,
 ytmusic-shelf-renderer .yt-spec-button-shape-next--outline, 
 ytmusic-music-shelf-renderer .yt-spec-button-shape-next--outline {
   width: 420px !important;
-  height: 280px !important;
+  height: 36px !important;
   background: rgba(255, 255, 255, 0.03) !important; 
   color: #ffffff !important; 
   backdrop-filter: blur(1.5px) url(#lg-filter) blur(3px) saturate(1.5) brightness(1.1) !important;
@@ -1480,7 +1480,7 @@ tp-yt-paper-toast yt-button-shape {
 tp-yt-paper-toast .yt-spec-button-shape-next,
 tp-yt-paper-toast paper-button {
   width: 420px !important;
-  height: 280px !important;
+  height: 36px !important;
   background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(1.5px) url(#lg-filter) blur(3px) saturate(1.5) brightness(1.1) !important;
   -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.15) contrast(1.05) !important;
