@@ -1,10 +1,132 @@
-/* Lucid v1.1.1, a custom theme for BetterLyrics */
+/* Lucid Expressive Shift v1.1.1, a custom theme for BetterLyrics */
 
 @font-face {
-  font-family: "MySanFrancisco";
-  src: url("https://raw.githubusercontent.com/sahibjotsaggu/San-Francisco-Pro-Fonts/refs/heads/master/SF-Pro-Display-Bold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+/* =========================================
+   --- EXPRESSIVE TYPOGRAPHY (GOOGLE SANS FLEX) ---
+   Imported/adapted from the Google Sans Flex userstyle.
+   Font-weight/variation only — no backgrounds or layout,
+   so it layers cleanly on top of Lucid's glass styling.
+   ========================================= */
+
+/* Player bar text */
+ytmusic-player-bar yt-formatted-string {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Fullscreen lyrics title */
+ytmusic-player-page[player-fullscreened] #blyrics-title {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Queue header subtitle + song titles in queue */
+ytmusic-queue-header-renderer yt-formatted-string.subtitle,
+ytmusic-player-queue-item yt-formatted-string.song-title {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Add to Playlist menu text */
+ytmusic-add-to-playlist-renderer .top-bar yt-formatted-string,
+ytmusic-add-to-playlist-renderer yt-formatted-string.section-heading,
+ytmusic-add-to-playlist-renderer #playlists ytmusic-playlist-add-to-option-renderer yt-formatted-string#title {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* BetterLyrics: active words bold/expressive, romanized+translated stay default weight */
+.blyrics--word {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+.blyrics--romanized,
+.blyrics--translated {
+  font-weight: var(--font-weight-default) !important;
+}
+
+#blyrics-song-info {
+  font-variation-settings: var(--font-settings-default) !important;
+}
+
+#blyrics-title,
+#blyrics-artist {
+  font-weight: var(--font-weight-default) !important;
+  font-variation-settings: var(--font-settings-default) !important;
+}
+
+/* Homepage: carousel headers, grid item titles, list item titles, card shelf titles */
+ytmusic-carousel-shelf-basic-header-renderer yt-formatted-string.title,
+ytmusic-carousel-shelf-basic-header-renderer yt-formatted-string.title a,
+.ytmusic-two-row-item-renderer .title-group yt-formatted-string.title,
+.ytmusic-two-row-item-renderer .title-group yt-formatted-string.title > a.yt-simple-endpoint,
+.ytmusic-responsive-list-item-renderer .title-column yt-formatted-string.title > a,
+ytmusic-card-shelf-renderer yt-formatted-string.title,
+ytmusic-card-shelf-renderer yt-formatted-string.title a,
+ytmusic-card-shelf-header-basic-renderer .ytmusicCardShelfHeaderBasicRendererTitle,
+ytmusic-card-shelf-header-basic-renderer .ytmusicCardShelfHeaderBasicRendererTitle .yt-core-attributed-string {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Sidebar nav entry titles */
+ytmusic-guide-entry-renderer yt-formatted-string.title {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Search suggestion link text */
+ytmusic-search-suggestions-section-renderer a.yt-simple-endpoint {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Page / responsive headers, avatar stack, shelf titles, channel page title */
+ytmusic-header-renderer yt-formatted-string.title,
+ytmusic-responsive-header-renderer yt-formatted-string.title,
+ytmusic-shelf-renderer .header h2.title yt-formatted-string,
+ytmusic-shelf-renderer h2.title yt-formatted-string,
+ytmusic-visual-header-renderer yt-formatted-string.title {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+ytmusic-responsive-header-renderer .yt-avatar-stack-view-model__avatar-stack-text {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+  font-size: 1.1em !important;
+}
+
+/* Tab navigation labels */
+tp-yt-paper-tab .tab-content {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Account menu name/handle */
+#account-name,
+#channel-handle {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Share dialog title + "Start at" text */
+yt-share-panel-title-v15-renderer #title,
+yt-start-at-renderer yt-formatted-string {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
+}
+
+/* Settings dialog: title + all item titles */
+ytmusic-settings-page .dialog-title,
+ytmusic-settings-page ytmusic-setting-boolean-renderer .title,
+ytmusic-settings-page ytmusic-setting-single-option-menu-renderer .title,
+ytmusic-settings-page ytmusic-setting-action-renderer .title,
+ytmusic-settings-page ytmusic-setting-read-only-item-renderer .title,
+ytmusic-settings-page .category-menu-item .title {
+  font-weight: var(--font-weight-heading) !important;
+  font-variation-settings: var(--font-settings-heading) !important;
 }
 
 /* =========================================
