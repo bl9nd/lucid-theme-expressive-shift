@@ -353,7 +353,7 @@ ytmusic-responsive-list-item-renderer yt-formatted-string,
 ytmusic-two-row-item-renderer yt-formatted-string,
 ytmusic-player-queue-item yt-formatted-string {
   font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
-  font-variation-settings: "slnt" 0, "wdth" 30, "GRAD" 0, "ROND" 0 !important;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "ROND" 0 !important;
   font-weight: 700 !important;
 }
 
