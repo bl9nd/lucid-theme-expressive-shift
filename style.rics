@@ -371,7 +371,7 @@ ytmusic-menu-popup-renderer tp-yt-paper-item:focus-within yt-formatted-string,
 ytmusic-responsive-list-item-renderer:focus-within yt-formatted-string,
 ytmusic-two-row-item-renderer:focus-within yt-formatted-string,
 ytmusic-player-queue-item:focus-within yt-formatted-string {
-  font-variation-settings: "slnt" 0, "wdth" 150, "GRAD" 50, "ROND" 100 !important;
+  font-variation-settings: "slnt" 0, "wdth" 50, "GRAD" 50, "ROND" 100 !important;
   font-weight: 800 !important;
 }
 
