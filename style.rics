@@ -353,7 +353,7 @@ ytmusic-responsive-list-item-renderer yt-formatted-string,
 ytmusic-two-row-item-renderer yt-formatted-string,
 ytmusic-player-queue-item yt-formatted-string {
   font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
-  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "ROND" 100 !important;
+  font-variation-settings: "slnt" 0, "wdth" 70, "GRAD" 0, "ROND" 50 !important;
   font-weight: 700 !important;
 }
 
@@ -1968,3 +1968,4 @@ ytmusic-card-shelf-renderer .yt-spec-button-shape-next--tonal:hover {
     filter: brightness(200%) contrast(200%) grayscale(100%) !important;
     opacity: 1 !important;
 }
+
