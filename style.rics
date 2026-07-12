@@ -1,11 +1,6 @@
-/* Lucid v1.1.1, a custom theme for BetterLyrics */
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap");
 
-@font-face {
-  font-family: "MySanFrancisco";
-  src: url("https://raw.githubusercontent.com/sahibjotsaggu/San-Francisco-Pro-Fonts/refs/heads/master/SF-Pro-Display-Bold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
+/* Lucid Expressive Shift v1.1.1, a custom theme for BetterLyrics */
 
 /* =========================================
    --- BETTERLYRICS ENGINE VARIABLES --- 
@@ -45,7 +40,16 @@ blyrics-queue-scroll-ms = 150;
   /* --- 5. BETTERLYRICS NATIVE ENGINE SETTINGS --- */
   --blyrics-lyric-active-color: color(display-p3 1 1 1 / 1);
   --blyrics-lyric-inactive-color: color(display-p3 1 1 1 / 0.2);
-  --blyrics-font-family: "MySanFrancisco", "SF Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif;
+  --blyrics-font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif;
+  --font-weight-default: 500;
+  --font-settings-default: "slnt" 0, "wdth" 87.5, "GRAD" 0, "ROND" 100;
+  --font-weight-heading: 600;
+  --font-settings-heading: "slnt" 0, "wdth" 112.5, "GRAD" 50, "ROND" 0;
+  --bg-primary: #000000;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-radius-small: 6px;
+  --border-radius-large: 12px;
   --blyrics-lyric-scroll-duration: 800ms;
   --blyrics-lyric-scroll-timing-function: cubic-bezier(0.45, 0, 0.15, 1);
   --blyrics-scale-transition-duration: 0.6s;
@@ -70,7 +74,7 @@ blyrics-queue-scroll-ms = 150;
 }
 
 * {
-  font-family: "MySanFrancisco", "SF Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
 }
 
 /* =========================================
@@ -804,7 +808,7 @@ ytmusic-player-page[player-ui-state="FULLSCREEN"]>div>div#side-panel {
 
 #blyrics-title, 
 #blyrics-artist { 
-  font-family: "MySanFrancisco", "SF Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+  font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif; 
 }
 
 /* Footer Elements */
