@@ -344,6 +344,16 @@ ytmusic-guide-entry-renderer[is-collapsed] tp-yt-paper-item {
   transition: background-color 0.2s ease !important;
 }
 
+/* Hide upgrade/premium entry in the left guide */
+ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Upgrade"]),
+ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Upgrade"]),
+ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Premium"]),
+ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Premium"]),
+ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Try Premium"]),
+ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Try Premium"]) {
+  display: none !important;
+}
+
 /* New Playlist Button */
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
   background: rgba(255, 255, 255, 0.1) !important; 
@@ -1026,14 +1036,14 @@ ytmusic-player-page[player-fullscreened] #main-panel {
 
 /* Global Media Sizing */
 ytmusic-player-page #player.ytmusic-player-page { 
-  border-radius: 52px !important; 
+  border-radius: 2px !important; 
   overflow: hidden !important; 
   box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important; 
   background: transparent !important; 
 }
 
 #song-media-window { 
-  border-radius: 52px !important; 
+  border-radius: 2px !important; 
 }
 
 ytmusic-player-page[player-fullscreened] #song-media-window, 
@@ -1061,7 +1071,7 @@ ytmusic-player-page:not([video-mode]):not([is-video-truncation-fix-enabled])[pla
   aspect-ratio: 1 !important;
   height: auto !important; 
   max-height: none !important; 
-  border-radius: 52px !important; 
+  border-radius: 3px !important; 
   box-shadow: 0 20px 50px rgba(0,0,0,0.4) !important; 
 }
 
