@@ -350,8 +350,7 @@ ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Upgrade"]),
 ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Premium"]),
 ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Premium"]),
 ytmusic-guide-entry-renderer:has(yt-formatted-string[title*="Try Premium"]),
-ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Try Premium"]),
-ytmusic-guide-entry-renderer:has(yt-formatted-string:not([is-empty]):not([hidden])) {
+ytmusic-guide-entry-renderer:has(yt-formatted-string[aria-label*="Try Premium"]) {
   display: none !important;
 }
 
