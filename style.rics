@@ -1,12 +1,26 @@
 /* Lucid Expressive Shift v1.1.1, a custom theme for BetterLyrics */
-
-@font-face {
 /* =========================================
    --- EXPRESSIVE TYPOGRAPHY (GOOGLE SANS FLEX) ---
    Imported/adapted from the Google Sans Flex userstyle.
    Font-weight/variation only — no backgrounds or layout,
    so it layers cleanly on top of Lucid's glass styling.
    ========================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap");
+
+:root {
+    --blyrics-font-family:
+        "Google Sans Flex", var(--noto-sans-universal), sans-serif;
+    --font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif;
+    --font-weight-default: 500;
+    --font-settings-default: "slnt" 0, "wdth" 87.5, "GRAD" 0, "ROND" 100;
+    --font-weight-heading: 600;
+    --font-settings-heading: "slnt" 0, "wdth" 112.5, "GRAD" 50, "ROND" 0;
+    --bg-primary: #000000;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --border-radius-small: 6px;
+    --border-radius-large: 12px;
+}
 
 /* Player bar text */
 ytmusic-player-bar yt-formatted-string {
