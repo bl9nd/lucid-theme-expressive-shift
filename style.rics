@@ -142,6 +142,19 @@ ytmusic-nav-bar {
   box-shadow: none !important; 
 }
 
+/* YouTube Music logo */
+ytmusic-nav-bar ytmusic-logo-renderer,
+ytmusic-nav-bar ytmusic-logo-renderer yt-formatted-string,
+ytmusic-nav-bar ytmusic-logo-renderer .logo-icon,
+ytmusic-nav-bar ytmusic-logo-renderer .title,
+ytmusic-nav-bar ytmusic-logo-renderer #logo-icon,
+ytmusic-nav-bar ytmusic-logo-renderer #title {
+  font-family: "Google Sans Flex", var(--noto-sans-universal), sans-serif !important;
+  font-weight: 800 !important;
+  font-style: italic !important;
+  font-variation-settings: "slnt" -10, "wdth" 125, "GRAD" 50, "ROND" 0 !important;
+}
+
 /* Page Loading Progress Bar Elevation */
 yt-page-navigation-progress {
   z-index: 9999 !important;
