@@ -1947,3 +1947,4 @@ ytmusic-card-shelf-renderer .yt-spec-button-shape-next--tonal:hover {
     filter: brightness(200%) contrast(200%) grayscale(100%) !important;
     opacity: 1 !important;
 }
+
