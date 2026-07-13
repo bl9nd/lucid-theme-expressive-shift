@@ -1,6 +1,8 @@
-# Lucid
+# Acknowledgement
+This project is a fork of https://github.com/drago-oo/lucid-theme and is inspired by https://github.com/decipher3114/better-lyrics-expressive for the idea.
+# Lucid-theme-expressive-shift
 
-A Premium Glass Theme for Better Lyrics
+A Premium Glass Theme for Better Lyrics with Expressive typograhy.
 
 ## Installation
 
