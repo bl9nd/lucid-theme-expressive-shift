@@ -411,6 +411,26 @@ ytmusic-player-queue-item:focus-within yt-formatted-string {
   font-weight: 700 !important;
 }
 
+/* Library / List item titles must remain visible */
+ytmusic-library-shelf-renderer yt-formatted-string,
+ytmusic-library-shelf-renderer .title,
+ytmusic-library-shelf-renderer .title-wrapper,
+ytmusic-responsive-list-item-renderer yt-formatted-string,
+ytmusic-responsive-list-item-renderer .title,
+ytmusic-responsive-list-item-renderer .title-wrapper,
+ytmusic-responsive-list-item-renderer .text-wrapper,
+ytmusic-responsive-list-item-renderer .content-wrapper,
+ytmusic-responsive-list-item-renderer a,
+ytmusic-responsive-list-item-renderer span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: none !important;
+  mix-blend-mode: normal !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
 /* New Playlist Button */
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
   background: rgba(255, 255, 255, 0.1) !important; 
