@@ -415,20 +415,52 @@ ytmusic-player-queue-item:focus-within yt-formatted-string {
 ytmusic-library-shelf-renderer yt-formatted-string,
 ytmusic-library-shelf-renderer .title,
 ytmusic-library-shelf-renderer .title-wrapper,
+ytmusic-library-shelf-renderer .text-wrapper,
+ytmusic-library-shelf-renderer .content-wrapper,
+ytmusic-library-shelf-renderer .metadata,
+ytmusic-library-shelf-renderer a,
+ytmusic-library-shelf-renderer span,
+ytmusic-item-section-renderer yt-formatted-string,
+ytmusic-item-section-renderer .title,
+ytmusic-item-section-renderer .title-wrapper,
+ytmusic-item-section-renderer .text-wrapper,
+ytmusic-item-section-renderer .content-wrapper,
+ytmusic-item-section-renderer a,
+ytmusic-item-section-renderer span,
 ytmusic-responsive-list-item-renderer yt-formatted-string,
 ytmusic-responsive-list-item-renderer .title,
 ytmusic-responsive-list-item-renderer .title-wrapper,
 ytmusic-responsive-list-item-renderer .text-wrapper,
 ytmusic-responsive-list-item-renderer .content-wrapper,
+ytmusic-responsive-list-item-renderer .metadata,
 ytmusic-responsive-list-item-renderer a,
-ytmusic-responsive-list-item-renderer span {
+ytmusic-responsive-list-item-renderer span,
+ytmusic-two-row-item-renderer yt-formatted-string,
+ytmusic-two-row-item-renderer .title,
+ytmusic-two-row-item-renderer .title-wrapper,
+ytmusic-two-row-item-renderer .text-wrapper,
+ytmusic-two-row-item-renderer .content-wrapper,
+ytmusic-two-row-item-renderer a,
+ytmusic-two-row-item-renderer span {
   color: #ffffff !important;
   opacity: 1 !important;
   visibility: visible !important;
-  text-shadow: none !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !important;
   mix-blend-mode: normal !important;
   overflow: visible !important;
   display: block !important;
+  line-height: 1.3 !important;
+  position: relative !important;
+  z-index: 3 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+ytmusic-library-shelf-renderer,
+ytmusic-item-section-renderer,
+ytmusic-responsive-list-item-renderer,
+ytmusic-two-row-item-renderer {
+  color: #ffffff !important;
+  background: transparent !important;
 }
 
 /* New Playlist Button */
@@ -2025,3 +2057,4 @@ ytmusic-card-shelf-renderer .yt-spec-button-shape-next--tonal:hover {
     filter: brightness(200%) contrast(200%) grayscale(100%) !important;
     opacity: 1 !important;
 }
+
