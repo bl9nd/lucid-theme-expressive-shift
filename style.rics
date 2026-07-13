@@ -1146,7 +1146,7 @@ ytmusic-player-page:not([video-mode]):not([player-fullscreened]):not([blyrics-df
   height: auto !important; 
   max-height: none !important; 
   margin: 0 auto !important; 
-  border-radius: 52px !important; 
+  border-radius: 3px !important; 
   box-shadow: 0 20px 50px rgba(0,0,0,0.4) !important; 
 }
 
