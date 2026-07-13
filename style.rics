@@ -411,23 +411,6 @@ ytmusic-player-queue-item:focus-within yt-formatted-string {
   font-weight: 700 !important;
 }
 
-/* Keep library/list-item titles visible and aligned */
-ytmusic-responsive-list-item-renderer yt-formatted-string,
-ytmusic-responsive-list-item-renderer .title,
-ytmusic-responsive-list-item-renderer .text-content,
-ytmusic-responsive-list-item-renderer [slot="title"],
-ytmusic-responsive-list-item-renderer [id*="title"] {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
-  white-space: normal !important;
-  line-height: 1.25 !important;
-}
-
 /* New Playlist Button */
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
   background: rgba(255, 255, 255, 0.1) !important; 
