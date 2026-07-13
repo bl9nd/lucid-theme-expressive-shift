@@ -345,6 +345,34 @@ ytmusic-guide-entry-renderer[is-collapsed] tp-yt-paper-item {
   transition: background-color 0.2s ease !important;
 }
 
+@keyframes lucid-active-morph {
+  0% {
+    border-radius: 24px !important;
+    transform: scaleX(0.96) !important;
+  }
+  50% {
+    border-radius: 40px !important;
+    transform: scaleX(1.02) !important;
+  }
+  100% {
+    border-radius: 52px !important;
+    transform: scaleX(1.04) !important;
+  }
+}
+
+ytmusic-guide-entry-renderer[active] tp-yt-paper-item,
+ytmusic-tabs tp-yt-paper-tab[aria-selected="true"],
+ytmusic-tabs tp-yt-paper-tab[active] {
+  animation: lucid-active-morph 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both !important;
+  transform-origin: center !important;
+  overflow: visible !important;
+}
+
+ytmusic-guide-entry-renderer[active] tp-yt-paper-item {
+  width: calc(100% - 6px) !important;
+  padding-inline: 12px !important;
+}
+
 /* Home / Explore / Library tabs and focused menu/list labels */
 ytmusic-tabs tp-yt-paper-tab .tab-title,
 ytmusic-tabbed-search-results-renderer tp-yt-paper-tab .tab-title,
