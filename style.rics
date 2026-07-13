@@ -322,9 +322,16 @@ ytmusic-guide-renderer {
 }
 
 /* Expanded Sidebar Items */
-ytmusic-guide-entry-renderer tp-yt-paper-item {
+ytmusic-guide-entry-renderer tp-yt-paper-item,
+ytmusic-menu-popup-renderer tp-yt-paper-item {
   border-radius: 52px !important; 
   margin: 0 8px !important; 
+  padding-inline: 14px 18px !important;
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: calc(100% - 16px) !important;
+  max-width: calc(100% - 16px) !important;
+  overflow: hidden !important;
   transition: background-color 0.2s ease !important;
 }
 
