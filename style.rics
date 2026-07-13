@@ -198,9 +198,42 @@ ytmusic-search-box .search-box {
   transition: background-color 0.2s ease, border-color 0.2s ease, border-radius 0.2s ease 0.15s !important;
 }
 
-ytmusic-search-box:hover .search-box { 
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
+/* ========== LIQUID GLASS SEARCH CONTAINER ========== */
+:root {
+  --lg-bg-color: rgba(255, 255, 255, 0.14);
+  --lg-highlight: rgba(255, 255, 255, 0.55);
+}
+
+ytmusic-search-box .search-box {
+  position: relative !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  backdrop-filter: blur(14px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
+}
+
+/* glass-overlay layer: soft white tint behind the icon/text */
+ytmusic-search-box .search-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--lg-bg-color);
+  pointer-events: none;
+}
+
+/* glass-specular layer: rim light, sits above content but has no fill so nothing gets blocked */
+ytmusic-search-box .search-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  box-shadow:
+    inset 1px 1px 0 var(--lg-highlight),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.08),
+    inset 0 0 12px rgba(255, 255, 255, 0.35);
+  pointer-events: none;
 }
 
 /* Search Input Pill (Opened State) - SEAMLESS GLASS INTEGRATION */
