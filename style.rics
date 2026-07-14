@@ -1942,7 +1942,7 @@ ytmusic-responsive-list-item-renderer[music-item-style="MUSIC_ITEM_STYLE_ALBUM"]
 [thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCLE"] yt-img-shadow img,
 ytmusic-responsive-list-item-renderer:has([thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCLE"]) yt-img-shadow,
 ytmusic-responsive-list-item-renderer:has([thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCLE"]) yt-img-shadow img {
-    border-radius: 52px !important;
+    border-radius: 199px !important;
     -webkit-mask-image: none !important;
     height: 100% !important; /* Reverts the height auto */
 }
