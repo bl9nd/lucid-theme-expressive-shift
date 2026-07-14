@@ -13,7 +13,7 @@ A Premium Glass Theme for Better Lyrics with Expressive typograhy.
 
 ## Preview
 
-![Preview](https://s8.ezgif.com/tmp/ezgif-878a312a1ce0cade.gif)
+![Preview] (https://s8.ezgif.com/tmp/ezgif-878a312a1ce0cade.gif)
 
 ## License
 
